@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register an Account</title>
+        <link rel="stylesheet" href="styleSheet.css">
+    </head>
+    <body style="background-image:url(Images/HomPage_BackgroundPic.jpg);">
+        <div class="Nav_Bar" id="Registration_NavBar">
+            
+            <div class="Biz_Name">
+                <a href="index.html">
+                    <img class="Logo" src="Images\Care_Caterers.jpg"> 
+                </a>
+            </div>
+            
+             <div class="Registration_Page_Heading">
+                 <h3>
+                     Register Your Account
+                 </h3>
+             </div>
+            
+         </div> 
+
+         <div class="RegistrationForm_Container">
+            <form class="Registration_Form" id="Registration_Form_id" method="POST" action="php_scripts/Registration.php">
+
+                <div class="Form_Contents" id="Registration_Form_Contents">
+
+                    <h2>First Name(s):</h2>
+                    <div class="Registration_Input">
+                        <input class="textbox" type='text' name='First_Name_Registration'>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <h2>Surname: </h2>
+                    <div class="Registration_Input">
+                        <input class="textbox" type='text' name='Surname_Registration'>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <h2>Username: </h2>
+                    <div class="Registration_Input">
+                        <input class="textbox" type='text' name='Username_Registration'>
+                    </div>
+                    <br>
+                    <br>
+
+                    <h2>Email: </h2>
+                    <div class="Registration_Input">
+                        <input class="textbox" type='text' name='Email_Registration'>
+                    </div>
+                    <br>
+                    <br>
+
+                    <h2>Password: </h2>
+                    <div class="Registration_Input">
+                        <input class="textbox" type='password' name='Password_Registration'>
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="Button" id="Registration_Button">
+                        <button type="submit" name="Register_Account_Button">Register Account</button>
+                    </div>
+
+                </div>
+
+            </form>
+         </div>
+    </body>
+</html>
+
+
+<!--
+    
+//user login
+//https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
+//https://codeshack.io/secure-login-system-php-mysql/
+//https://speedysense.com/create-registration-login-system-php-mysql/
+
+//user registration 
+
+//using firebase real-time databse with website
+https://medium.com/evenbit/getting-started-with-firebase-real-time-database-for-the-web-f53b527aae27
+
+-->

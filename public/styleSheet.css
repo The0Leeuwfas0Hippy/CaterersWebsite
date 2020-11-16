@@ -1,0 +1,951 @@
+.Whole_Site
+{
+    /*background-color: #FFD1F0;*/
+    background-color: white;
+    padding-bottom: 25px;
+}
+.Biz_Name
+{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.Logo
+{
+    font-size: 550%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: block;
+    height: 150px;
+    width: 640px;
+    background-size: cover;
+    border-radius: 20px;
+    
+}
+
+
+.Nav_Bar
+{
+    margin-bottom: 5px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.Nav_Menu
+{
+    margin-top: 20px;
+    font-size: 37px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: white;
+    width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 7px 0px purple;
+}
+
+.Nav_Menu a
+{
+    
+    /*color: #ff30a6;*/
+    /*color: #ED3FB3;*/
+    color: purple;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: 10px;
+   
+}
+
+.Nav_Menu a:hover
+{
+    border-bottom: 3px solid;
+    color: black;
+    transition: border-bottom 0.5s;
+}
+
+
+.Dropdown
+{
+    position: relative;
+    display: inline-block;
+    color: purple;
+    
+}
+.DropDown_Content
+{
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.Dropdown:hover .DropDown_Content
+{
+    display: block;
+}
+
+
+.Site_Body
+{
+    margin-top: 5px;
+    /*background-image:url(Images/WHomPage_BackgroundPic.jpg);*/
+}
+
+*
+{
+    box-sizing: border-box;
+}
+.each_slide
+{
+    
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border-radius: 20px;
+   
+}
+.index_Slideshow
+{
+    margin: auto;
+    position: relative;
+    max-width: 100%;
+    border-radius: 30px;
+    background-color: violet;
+}
+
+.Prev, .Next
+{
+   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.Next
+{
+    right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+.slideCaption
+{
+     color: purple;
+  font-size: 150px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: auto;
+  margin-top: auto;
+  border-radius: 25px;
+}
+
+.active
+{
+    background-color: #717171;
+
+}
+
+.each_slide img
+{
+    border-radius: 25px;
+}
+
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 4s;
+    border-radius: 25px;
+}
+@-webkit-keyframes fade
+{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade
+{
+   from{opacity: .4}
+   to{opacity: 1}
+}
+
+/*
+Home Page
+*/
+.HomePage_Slider
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.Each_HomePage_Slider
+{
+    display: flex;
+    box-shadow: 0px 7px 10px 0px purple;
+    margin: 8px;
+    margin-top: 3em;
+    padding: 15px;
+    height: 810px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+
+.Each_HomePage_Slider:hover > .Slide_Image
+{
+    background-color: purple;
+}
+.Each_HomePage_Slider:hover > .Slide_Image button
+{
+    background-color: violet;
+}
+.Each_HomePage_Slider:hover > .Slide_Image .HomePage_Slider_Text
+{
+    color: white;
+}
+
+
+.HomePage_Slider_Text
+{
+    
+    font-size: 5em;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bolder;
+    color: purple;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 75px;
+}
+.Slide_Image
+{
+    background-color: violet;
+    padding: 7px;
+    border-radius: 20px;
+}
+.Slide_Image img
+{
+    border-radius: 20px;
+    margin: auto;
+}
+.Slide_Image button
+{
+    
+    margin: auto;
+    margin-top: 1em;
+    margin-top: 2em;
+    background-color: purple;
+    color: white;
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 90px;
+    width: 350px;
+    border-radius: 10px;
+    border-style: groove;
+}
+.Slide_Image button:hover
+{
+    background-color: rgb(14, 12, 14);
+    box-shadow: 0px 8px 14px 0px black;
+}
+.Slide_Image button a
+{
+    text-decoration: none;
+    color: white;
+}
+
+
+.form_contents
+{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px pink;
+}
+.log_in
+{
+    display: flex;
+    justify-content: center;
+}
+.Log_in_form
+{
+    display: flex;
+   justify-content: center;
+   padding: 25px;
+   border-radius: 20px;
+   background-color: white;
+   margin-bottom: 1px;
+}
+.form_contents h2
+{
+    display: flex;
+   justify-content: center;
+}
+.input_login_creds
+{
+    display: flex;
+   justify-content: center;
+}
+.input_login_creds .textbox
+{
+    height: 35px;
+    font-size: 18px;
+}
+.Button
+{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.Button button
+{
+   padding-top: 0px;
+    width: 169px;
+    height: 63px;
+    font-size: 30px;
+    font-family: serif;
+    font-style: italic;
+    border-radius: 10px;
+    background-color: palevioletred;
+}
+.Button button:hover
+{
+    background-color: purple;
+    color: white;
+}
+
+.form_contents h3
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: purple;
+    margin-top: 0px;
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+    font-size: 22px;
+    font-style: italic;
+}
+.register_account
+{
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    justify-content: space-between;
+}
+.register_account h3
+{
+    font-size: 27px;
+    color: black;
+    margin-top: 0em;
+}
+.register_account a
+{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 65px;
+    text-decoration: none;
+    transition: color 0.5s;
+    color: purple;
+}
+.register_account a:hover
+{
+    border-bottom: 3px solid;
+    color: black;
+    transition: border-bottom 0.5s;
+}
+
+/*
+    Register Account Page
+                            */
+
+#Registration_NavBar
+{
+    margin-bottom: 0em;
+}
+
+.Registration_Page_Heading
+{
+    
+    background-color: white;
+    padding: 9px;
+    width: 640px;
+    margin-left: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-right: auto;
+}  
+
+.Registration_Page_Heading h3
+{
+    margin-top: 0em;
+    border-radius: 35px;
+    margin-bottom: 15px; 
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4em;
+    font-style: italic;
+    color: purple;
+    padding: 10px;
+    box-shadow: 0px 5px 15px 0px purple;
+}
+#Registration_Form_Contents 
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 0em;
+    box-shadow: 0px 5px 9px 0px purple;
+}
+#Registration_Form_Contents h2
+{
+    margin-top: 15px;
+    color: purple;
+}
+
+.Registration_Input
+{
+    display: flex;
+    justify-content: center;
+}
+.Registration_Input input
+{
+    font-size: 1em;
+}
+
+#Registration_Form_id
+{
+    width: 700px;
+}
+
+.RegistrationForm_Container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    background-color: white;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 25px;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#Registration_Button button
+{
+    width: 250px;
+    height: 70px;
+    font-size: 30px;
+}
+
+
+/*
+    Services and Products
+*/
+
+
+.Manual_Order_Form_Container
+{
+    box-shadow: 0px 6px 12px 0px  violet;
+}
+
+.Services
+{
+    /*background-color: #FFD1F0; */
+    margin-top: 5px;
+    /*background-color: #ff30a6;*/
+    padding: 3px;
+}
+
+
+.Cake_Title h1
+{
+    
+    text-align: center;
+    width: 100%;
+    font-size: 16em;
+}
+.Decor_Title h1
+{
+    text-align: center;
+    width: 100%;
+    font-size: 16em;
+}
+.Dresses_Title h1
+{
+    text-align: center;
+    width: 100%;
+    font-size: 11em;
+}
+
+.Cakes
+{
+   
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    overflow-x: auto;
+    /*background-color: #ff30a6;*/
+    /*background-color: #FFD1F0;*/
+    
+    border-radius: 20px;
+}
+.Each_Cake
+{
+    margin: 2px;
+    padding: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.Decor_Setup
+{
+     margin-bottom: 25px;
+     margin-top: 20px;
+     display: flex;
+     overflow-x: auto;
+     /*background-color: #FFD1F0;*/
+     border-radius: 20px;
+}
+.Each_Setup
+{
+    margin: 2px;
+    padding: 20px;
+}
+
+.Wedding_Dresses
+{
+     margin-top: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    overflow-x: auto;
+    /*background-color: #ff30a6;*/
+    /*background-color: #FFD1F0;*/
+    border-radius: 20px;
+}
+.Each_Dress
+{
+    margin: 2px;
+    padding: 20px;
+}
+
+.Personnel
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Products
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+/*
+Personnel Web Page
+*/
+
+.heading_text h1 
+{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin: 2px;
+    font-family: sans-serif;
+    font: fantasy;
+    font-style: italic;
+}
+.heading_subtext h3
+{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 2px;
+}
+.Personnel_Nav_Bar
+{
+    background-color: white;
+}
+
+.CEO
+{
+    background-color: #FFD1F0;
+    border-radius: 20px;
+}
+.Business_Admin
+{
+    background-color: #FFD1F0;
+    border-radius: 20px;
+}
+.Designer
+{
+    background-color: #FFD1F0;
+    border-radius: 20px;
+}
+
+.Personnel_Details
+{
+    margin-top: 25px;
+}
+.Profile_Picture
+{
+    margin-left: 5px;
+}
+.Profile_Picture img
+{
+    border-radius:20px;
+    background-color: white;
+    padding: 5px;
+}
+
+.Further_Detail
+{
+    display: flex;
+}
+.Personnel_Paragraph
+{
+    padding: 10px;
+    font-size: 24px;
+    margin-left: 11px;
+    margin-right: 9px;
+}
+
+.Personnel_Heading h1
+{
+    font-size: 60px;
+    color: purple;
+    background: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.Join_Team
+{
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    margin-top: 50px; 
+    margin-bottom: 90px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.Join_Team h2
+{
+    display: flex;
+    justify-content: center;
+    color: purple;
+    font-size: 38px;
+    font-style: italic;
+}
+.Form_Description
+{
+    width: 395px;
+    margin-left: auto;
+   margin-right: auto;
+   background-color: white;
+   padding: 10px;
+   border-radius: 20px;
+}
+
+.Form_Description h3
+{
+   margin-left: auto;
+   margin-right: auto;
+    margin-top: 0px;
+    font-style: italic;
+}
+
+
+.textbox
+{
+   align-items: center;
+    width: 395px;
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+.Job_Application_Form
+{
+    display: flex;
+    justify-content: center;
+}
+
+.Form_Contents
+{
+    background-color: #FFD1F0;
+    margin: 10px;
+    padding: 20px;
+    padding-top: 0px;
+    border-radius: 20px;
+}
+.Form_Contents textarea
+{
+     border-radius: 20px;
+}
+
+.Form_Contents h2
+{
+    display: flex;
+   justify-content: center;
+    margin-top: 1px;
+    margin-bottom: 0px;
+}
+
+.Form_Contents h3
+{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 1px;
+}
+.Form_Contents button
+{
+    width: 10em;
+    height: 4em;
+    font-size: 1em;
+}
+.Submit_Button
+{
+    display: flex;
+    justify-content: center;
+}
+.Submit_Button button
+{
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: serif;
+    font-style: italic;
+    margin-top: 15px;
+    width: 169px;
+    height: 63px;
+}
+.Submit_Button button:hover
+{
+    background-color: purple;
+    color: white;
+}
+
+
+
+/*
+Cake orders Page
+*/
+.orderPage_top
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.orderPage_top .Nav_Menu
+{
+    background-color: white;
+}
+.orderPage_top .Biz_Name .Logo
+{
+    width: 500px;
+    height: 110px;
+}
+
+.Shopping_Window
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0px 6px 12px 0px pink;
+    margin: 25px;
+    margin-top: 30px;
+}
+
+.Each_Item_In_the_Store
+{
+    margin: 17px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0);
+    
+}
+.Each_Item_In_the_Store img
+{
+    background-color: violet;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0px 10px 18px 0px rgba(0,0,0,0.2);
+}
+.Cake_Price
+{
+    display: none;
+}
+.Each_Item_In_the_Store img:hover
+{
+    display: block;
+    background-color: purple;
+    box-shadow: 5px 5px 5px 5px purple;
+}
+
+.Attire_In_Store_Heading, .Decor_In_Store_Heading, .Cakes_In_Store_Heading
+{
+    border-radius: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0px 6px 12px 0px pink;
+    padding: 15px;
+}
+
+.Cakes_In_Store_Heading h1, .Decor_In_Store_Heading h1, .Attire_In_Store_Heading h1
+{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: darkmagenta;
+    font-size: 4em;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+    padding-top: 2px;
+    margin-top: 2px;
+}
+
+.Cakes_In_Store_Heading h3, .Decor_In_Store_Heading h3, .Attire_In_Store_Heading h3
+{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color: purple;
+    font-size: 23px;
+    padding-top: 1px;
+    margin-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+}
+
+.Cakes_In_Store_Heading h3 a, .Decor_In_Store_Heading h3 a, .Attire_In_Store_Heading h3a
+{
+    color: purple;
+}
+
+.DesignDecorButton 
+{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.DesignDecorButton button
+{
+    height: 80px;
+    width: 450px;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 25px;
+    background-color: violet;
+    color: purple;
+    border-color: whitesmoke;
+}
+.DesignDecorButton button:hover
+{
+    box-shadow: 0px 8px 12px 0px violet;
+    background-color: purple;
+    color: white;
+}
+
+/*Purchase Window*/
+.PurchaseWindow_Outter
+{
+    display: flex;
+    justify-content: center;
+}
+.PurchaseWindow_Inner
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   width: 600px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 10px 12px 0px violet; 
+    border-radius: 25px;
+}
+.PurchaseWindow_Inner h2
+{
+    color: purple;
+}
+.PurchaseWindow_Form form input
+{
+    width: 200px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.PurchaseWindow_Form form textarea
+{
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 2px ;
+    font-size: 1em;
+    font-weight: bolder;
+    width: 550px;
+}
+.PurchaseButton
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.PurchaseButton button
+{
+    
+    width: 350px;
+    height: 66px;
+    color: white;
+    background-color: violet;
+    border-radius: 25px;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+.PurchaseButton button:hover
+{
+    background-color: purple;
+}
+
+.PurchaseWindow_Form img
+{
+    margin-top: 0.5em;
+    border-radius: 20px;
+    border-style: initial;
+}

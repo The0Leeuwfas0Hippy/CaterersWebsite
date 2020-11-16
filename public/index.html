@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Care Caterers</title>
+        <link rel="stylesheet" href="styleSheet.css">
+        <script type="text/javascript" src="WIL_javascript.js"></script>
+    </head>
+    
+    <body class="Whole_Site" style="background-image:url(Images/HomPage_BackgroundPic.jpg);">
+        <div class="Nav_Bar">
+            
+            <div class="Biz_Name">
+                 <img class="Logo" src="Images\Care_Caterers.jpg"> 
+            </div>
+            
+             <div class="Nav_Menu">
+                   
+                   <a href="Personnel.html">Personnel</a> 
+                   <a href="About_Us.html">About Us</a> 
+             </div>
+            
+         </div>  
+            
+            <!--index Welcome Slide show-->
+            <div class="index_Slideshow">
+                
+                <div class="each_slide fade">
+                    <img src="Images\index_WelcomeSlide.jpeg" style="width: 100%; height: 350px;">
+                    
+                    <div class="slideCaption">
+                        Welcome to Care Caterers!
+                    </div>
+                </div>
+                
+                <div class="each_slide fade">
+                    <img src="Images\index_WelcomeSlide.jpeg" style="width: 100%; height: 350px;">
+                    
+                    <div class="slideCaption">
+                        We've got Cakes!
+                    </div>
+                </div>
+                
+                <div class="each_slide fade">
+                    <img src="Images\index_WelcomeSlide.jpeg" style="width: 100%; height: 350px;">
+                    
+                    <div class="slideCaption">
+                        We've got Decor!
+                    </div>
+                </div>
+                
+                <div class="each_slide fade">
+                    <img src="Images\index_WelcomeSlide.jpeg" style="width: 100%; height: 350px;">
+                    
+                    <div class="slideCaption">
+                        We've got Attire!
+                    </div>
+                </div>
+                
+                <div class="each_slide fade">
+                    <img src="Images\index_WelcomeSlide.jpeg" style="width: 100%; height: 350px;">
+                    
+                    <div class="slideCaption">
+                        We've got Cuisine!
+                    </div>
+                </div>
+                
+                <!--Slide direction button - Next & Previous-->
+        
+                
+            </div>
+        
+        
+        
+        <div class="log_in">
+            
+            <form class="Log_in_form" method="POST" action="php_scripts/Login.php">
+                <div class="form_contents">
+                    <h3>
+                        If you are already a part of our family, Just log in below.
+                    </h3>
+                    
+                    <h2>Username:</h2>
+                    <div class="input_login_creds">
+                        <input class="textbox" type="text" name="Username_Login">
+                    </div>
+                    
+                    
+                    <br> <br>
+                    
+                    <h2>Password:</h2>
+                    <div class="input_login_creds">
+                        <input class="textbox" type="password" name="Password_Login">
+                    </div>
+                    
+                    <br> <br>
+                    
+                    <div class="Button">
+                        <button type="submit" name="LogIn_Button">Log in</button>
+                    </div>
+                    
+                    <br> <br>
+                    
+                    <div class="register_account">
+                        <h3>
+                            Don't have an account?
+                        </h3>
+                        
+                        <a href="Registration.html">Register</a>
+                    </div>
+                    
+                </div>
+                
+            </form>
+            
+        </div>
+        
+
+        <script>
+             var slideIndex = 0;
+ 
+            showSlides();
+
+            function showSlides() 
+            {
+  
+            var i;
+  
+            var slides = document.getElementsByClassName("each_slide fade");
+            
+              for (i = 0; i < slides.length; i++)
+              {
+                 slides[i].style.display = "none";
+              }
+            
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1;}
+                
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+        
+    </body>
+</html>
